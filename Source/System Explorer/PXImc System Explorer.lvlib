@@ -42,6 +42,8 @@
 			</Item>
 			<Item Name="Pages" Type="Folder">
 				<Item Name="Main Page.vi" Type="VI" URL="../Pages/Main Page.vi"/>
+				<Item Name="CD Section.vi" Type="VI" URL="../Pages/CD Section.vi"/>
+				<Item Name="Page Channel.vi" Type="VI" URL="../Pages/Page Channel.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Utility" Type="Folder">
@@ -56,6 +58,8 @@
 			<Item Name="CD Add Channel.vi" Type="VI" URL="../Utility/CD Add Channel.vi"/>
 			<Item Name="CD Import Export.vi" Type="VI" URL="../Utility/CD Import Export.vi"/>
 			<Item Name="Create Channel.vi" Type="VI" URL="../Utility/Create Channel.vi"/>
+			<Item Name="Channel Data and Porperties to Table.vi" Type="VI" URL="../Utility/Channel Data and Porperties to Table.vi"/>
+			<Item Name="Add Channel Properties To String Array.vi" Type="VI" URL="../Utility/Add Channel Properties To String Array.vi"/>
 			<Item Name="Import Export - Configuration Dialog.vi" Type="VI" URL="../Utility/Import Export - Configuration Dialog.vi"/>
 			<Item Name="Import Export - Export to XML File.vi" Type="VI" URL="../Utility/Import Export - Export to XML File.vi"/>
 			<Item Name="Import Export - Flatten to XML (CAR fix).vi" Type="VI" URL="../Utility/Import Export - Flatten to XML (CAR fix).vi"/>

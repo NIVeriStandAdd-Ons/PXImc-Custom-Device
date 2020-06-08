@@ -25,6 +25,8 @@
 			<Item Name="PXImc_enabled.png" Type="Document" URL="../Glyphs/PXImc_enabled.png"/>
 			<Item Name="PXImc_disabled.png" Type="Document" URL="../Glyphs/PXImc_disabled.png"/>
 			<Item Name="ImportExport.png" Type="Document" URL="../Glyphs/ImportExport.png"/>
+			<Item Name="ChnTx.png" Type="Document" URL="../Glyphs/ChnTx.png"/>
+			<Item Name="ChnRx.png" Type="Document" URL="../Glyphs/ChnRx.png"/>
 		</Item>
 		<Item Name="Custom Device PXImc.xml" Type="Document" URL="../Custom Device PXImc.xml"/>
 		<Item Name="PXImc Engine.lvlib" Type="Library" URL="../Engine/PXImc Engine.lvlib"/>
