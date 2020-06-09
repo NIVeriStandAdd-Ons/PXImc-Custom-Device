@@ -4,15 +4,15 @@
 
 ### LabVIEW Version ###
 
-LabVIEW 2012
+LabVIEW 2017
 
 ### Built Availability ###
 
-This IP is built and available for NI VeriStand 2012 and later [here](https://decibel.ni.com/content/docs/DOC-34816) but will be taken down soon.
+This IP is built and available for NI VeriStand 2017 and later [here](https://github.com/NIVeriStandAdd-Ons/PXImc-Custom-Device/releases).
 
 ### Quality, Limitations ###
 
-This IP should be considered immature. It has only been tested with PXImc 1.0 and NI VeriStand 2012. Additionally, the user interface of the custom device is very limiting, only allowing one time setup of the custom device settings.
+This IP should be considered immature. It has only been tested with PXImc 1.0 and NI VeriStand 2012.
 
 ### Instructions for Use ###
 Before using the PXImc custom device to communicate data between multiple targets, your targets **must** be synchronized. See [Building Synchronized NI VeriStand Systems](http://www.ni.com/white-paper/14637/en) for an tutorial on how to achieve this.
@@ -64,6 +64,11 @@ CPU % numbers are summed for all 4 cores of the 8135 and each target had about t
 ### Dependencies ###
 
 NI-PXImc 1.0 or later
+
+### Version History ###
+
+- ** v 1.0.0 ** Initial version. This version provides very limiting user interface, only allowing one time setup of the custom device settings.
+- ** v 2.0.0 ** New features: Updated section names; added channel management features (add or remove, custom channel naming, import / export feature), added version manager (also for imported channel configurations); build folder structure cleaned up
 
 ### License ###
 

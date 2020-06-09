@@ -5,7 +5,7 @@
     <eng>PXImc</eng>
     <loc>PXImc</loc>
   </AddMenu>
-  <Version>1.0.0</Version>
+  <Version>2.0.0</Version>
   <Type>Inline HW Interface</Type>
   <MaxOccurrence>2427</MaxOccurrence>
   <MainPageGUID>23168F61-B105-D978-DB9A-9F8ED3C6E22D</MainPageGUID>
@@ -131,10 +131,14 @@
 				</Documentation>
 			</Button>
       </ButtonList>
-			<ActionVIOnCompile>
-				<Type>To Common Doc Dir</Type>
-				<Path>Custom Devices\PXImc\Windows\PXImc Configuration.llb\ActionVIOnCompile.vi</Path>
-			</ActionVIOnCompile>
+		<ActionVIOnLoad>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\PXImc\Windows\PXImc Configuration.llb\ActionVIOnLoad.vi</Path>
+		</ActionVIOnLoad>
+		<ActionVIOnCompile>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\PXImc\Windows\PXImc Configuration.llb\ActionVIOnCompile.vi</Path>
+		</ActionVIOnCompile>
     </Page>
     <Page>
       <Name>
