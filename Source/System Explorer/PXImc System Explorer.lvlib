@@ -38,6 +38,7 @@
 		<Item Name="Dynamically Called" Type="Folder">
 			<Item Name="Action VIs" Type="Folder">
 				<Item Name="ActionVIOnCompile.vi" Type="VI" URL="../Action VIs/ActionVIOnCompile.vi"/>
+				<Item Name="ActionVIOnLoad.vi" Type="VI" URL="../Action VIs/ActionVIOnLoad.vi"/>
 				<Item Name="SE Initialization VI.vi" Type="VI" URL="../Action VIs/SE Initialization VI.vi"/>
 			</Item>
 			<Item Name="Pages" Type="Folder">
@@ -53,18 +54,20 @@
 			</Item>
 			<Item Name="Create Chans.vi" Type="VI" URL="../Utility/Create Chans.vi"/>
 			<Item Name="EnableDisable Control.vi" Type="VI" URL="../Utility/EnableDisable Control.vi"/>
-			<Item Name="Iteration # to String with Zero Padding.vi" Type="VI" URL="../Utility/Iteration # to String with Zero Padding.vi"/>
 			<Item Name="EnableDisable Main Page.vi" Type="VI" URL="../Utility/EnableDisable Main Page.vi"/>
 			<Item Name="CD Add Channel.vi" Type="VI" URL="../Utility/CD Add Channel.vi"/>
 			<Item Name="CD Import Export.vi" Type="VI" URL="../Utility/CD Import Export.vi"/>
 			<Item Name="Create Channel.vi" Type="VI" URL="../Utility/Create Channel.vi"/>
 			<Item Name="Channel Data and Porperties to Table.vi" Type="VI" URL="../Utility/Channel Data and Porperties to Table.vi"/>
 			<Item Name="Add Channel Properties To String Array.vi" Type="VI" URL="../Utility/Add Channel Properties To String Array.vi"/>
+			<Item Name="Get Next Unique Item Label.vi" Type="VI" URL="../Utility/Get Next Unique Item Label.vi"/>
 			<Item Name="Import Export - Configuration Dialog.vi" Type="VI" URL="../Utility/Import Export - Configuration Dialog.vi"/>
 			<Item Name="Import Export - Export to XML File.vi" Type="VI" URL="../Utility/Import Export - Export to XML File.vi"/>
 			<Item Name="Import Export - Flatten to XML (CAR fix).vi" Type="VI" URL="../Utility/Import Export - Flatten to XML (CAR fix).vi"/>
 			<Item Name="Import Export - Unflatten from XML (CAR fix).vi" Type="VI" URL="../Utility/Import Export - Unflatten from XML (CAR fix).vi"/>
 			<Item Name="Import Export - Import from XML File.vi" Type="VI" URL="../Utility/Import Export - Import from XML File.vi"/>
+			<Item Name="Version Manager.vi" Type="VI" URL="../Utility/Version Manager.vi"/>
+			<Item Name="Version Update.vi" Type="VI" URL="../Utility/Version Update.vi"/>
 		</Item>
 		<Item Name="Types" Type="Folder"/>
 	</Item>

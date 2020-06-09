@@ -29,9 +29,9 @@
 			<Item Name="ChnRx.png" Type="Document" URL="../Glyphs/ChnRx.png"/>
 		</Item>
 		<Item Name="Custom Device PXImc.xml" Type="Document" URL="../Custom Device PXImc.xml"/>
-		<Item Name="PXImc Engine.lvlib" Type="Library" URL="../Engine/PXImc Engine.lvlib"/>
 		<Item Name="PXImc Shared.lvlib" Type="Library" URL="../Shared/PXImc Shared.lvlib"/>
 		<Item Name="PXImc System Explorer.lvlib" Type="Library" URL="../System Explorer/PXImc System Explorer.lvlib"/>
+		<Item Name="PXImc Engine.lvlib" Type="Library" URL="../Engine/PXImc Engine.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
@@ -68,7 +68,6 @@
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
-				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
 				<Item Name="System Directory Type.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/System Directory Type.ctl"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
