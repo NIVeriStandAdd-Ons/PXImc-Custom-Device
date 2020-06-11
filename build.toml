@@ -27,6 +27,6 @@ type = 'githubRelease'
 
 [package]
 type = 'nipkg'
-name = 'PXImc-Custom-Device-{veristand_version}'
+name = 'pximc-custom-device-{veristand_version}'
 dev_xml_path = 'Source\Custom Device PXImc.xml'
 install_destination = 'documents\National Instruments\NI VeriStand {veristand_version}\Custom Devices'
