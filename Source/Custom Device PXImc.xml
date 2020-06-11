@@ -5,7 +5,7 @@
     <eng>PXImc</eng>
     <loc>PXImc</loc>
   </AddMenu>
-  <Version>1.0.0</Version>
+  <Version>2.0.0</Version>
   <Type>Inline HW Interface</Type>
   <MaxOccurrence>2427</MaxOccurrence>
   <MainPageGUID>23168F61-B105-D978-DB9A-9F8ED3C6E22D</MainPageGUID>
@@ -13,7 +13,7 @@
     <Type>Action</Type>
     <Item2Launch>
       <Type>To Common Doc Dir</Type>
-		<Path>Custom Devices\PXImc\PXImc Configuration.llb\SE Initialization VI.vi</Path>
+		<Path>Custom Devices\PXImc\Windows\PXImc Configuration.llb\SE Initialization VI.vi</Path>
     </Item2Launch>
   </InitializationVI>
   <CustomDeviceVI>
@@ -22,7 +22,7 @@
 				<SupportedTarget>Windows</SupportedTarget>
 				<Source>
 					<Type>To Common Doc Dir</Type>
-					<Path>Custom Devices\PXImc\PXImc Engine Windows.llb\RT Driver.vi</Path>
+					<Path>Custom Devices\PXImc\Windows\PXImc Engine Windows.llb\RT Driver.vi</Path>
 				</Source>
 				<!-- this is required by XML schema but clearly not used for windows -->
 				<RealTimeSystemDestination>c:\ni-rt\NIVeriStand\Custom Devices\PXImc\PXImc Engine Windows.llb\RT Driver.vi</RealTimeSystemDestination>
@@ -31,7 +31,7 @@
 				<SupportedTarget>Pharlap</SupportedTarget>
 				<Source>
 					<Type>To Common Doc Dir</Type>
-					<Path>Custom Devices\PXImc\c\PXImc Engine Pharlap.llb\RT Driver.vi</Path>
+					<Path>Custom Devices\PXImc\Pharlap\PXImc Engine Pharlap.llb\RT Driver.vi</Path>
 				</Source>
 				<RealTimeSystemDestination>c:\ni-rt\NIVeriStand\Custom Devices\PXImc\PXImc Engine Pharlap.llb\RT Driver.vi</RealTimeSystemDestination>
 			</Source>
@@ -47,35 +47,265 @@
 		<Copy>Copy</Copy>
       <GUID>23168F61-B105-D978-DB9A-9F8ED3C6E22D</GUID>
       <Glyph>
-			<Type>To Application Data Dir</Type>
-			<Path>System Explorer\Glyphs\timing.png</Path>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\PXImc\Glyphs\PXImc_enabled.png</Path>
 		</Glyph>
       <Item2Launch>
         <Type>To Common Doc Dir</Type>
-		<Path>Custom Devices\PXImc\PXImc Configuration.llb\Main Page.vi</Path>
+		<Path>Custom Devices\PXImc\Windows\PXImc Configuration.llb\Main Page.vi</Path>
       </Item2Launch>
-			<ActionVIOnCompile>
-				<Type>To Common Doc Dir</Type>
-				<Path>Custom Devices\PXImc\PXImc Configuration.llb\ActionVIOnCompile.vi</Path>
-			</ActionVIOnCompile>
+      <RunTimeMenu>
+        <MenuItem>
+          <GUID>19bc53ea-1e5a-4660-998c-87022222f051</GUID>
+          <Type>Action</Type>
+          <Name>
+            <eng>Disable</eng>
+            <loc>Disable</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\PXImc\Windows\PXImc Configuration.llb\EnableDisable Main Page.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+        <MenuItem>
+          <GUID>18B2C676-AF17-2B7F-0962-D95D206E20FB</GUID>
+          <Type>Separator</Type>
+          <Name>
+            <eng>.</eng>
+            <loc>.</loc>
+          </Name>
+          <Item2Launch>
+            <Type>Absolute</Type>
+            <Path>.</Path>
+          </Item2Launch>
+        </MenuItem>
+        <MenuItem>
+          <GUID>df942635-d104-4795-8f03-e31ea656376a</GUID>
+          <Type>Action</Type>
+          <Name>
+				<eng>Import/Export Cfg</eng>
+				<loc>Import/Export Cfg</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\PXImc\Windows\PXImc Configuration.llb\CD Import Export.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+        <MenuItem>
+          <GUID>18B2C676-AF17-2B7F-0962-D95D206E20FB</GUID>
+          <Type>Separator</Type>
+          <Name>
+            <eng>.</eng>
+            <loc>.</loc>
+          </Name>
+          <Item2Launch>
+            <Type>Absolute</Type>
+            <Path>.</Path>
+          </Item2Launch>
+        </MenuItem>
+      </RunTimeMenu>
+      <ButtonList>
+			<Button>
+				<ID>PXImcCD_ImportExport</ID>
+				<Glyph>
+					<Type>To Common Doc Dir</Type>
+					<Path>Custom Devices\PXImc\Glyphs\ImportExport.png</Path>
+				</Glyph>
+				<Type>Notification</Type>
+				<ReferencedGUID>df942635-d104-4795-8f03-e31ea656376a</ReferencedGUID>
+				<ButtonText>
+					<eng>Import/Export Cfg</eng>
+					<loc>Import/Export Cfg</loc>
+				</ButtonText>
+				<Caption>
+					<eng>Import/Export Cfg</eng>
+					<loc>Import/Export Cfg</loc>
+				</Caption>
+					<TipStrip>
+					<eng>Import/Export Cfg</eng>
+					<loc>Import/Export Cfg</loc>
+				</TipStrip>
+				<Documentation>
+					<eng></eng>
+					<loc></loc>
+				</Documentation>
+			</Button>
+      </ButtonList>
+		<ActionVIOnLoad>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\PXImc\Windows\PXImc Configuration.llb\ActionVIOnLoad.vi</Path>
+		</ActionVIOnLoad>
+		<ActionVIOnCompile>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\PXImc\Windows\PXImc Configuration.llb\ActionVIOnCompile.vi</Path>
+		</ActionVIOnCompile>
+    </Page>
+    <Page>
+      <Name>
+        <eng>PXImc</eng>
+        <loc>PXImc</loc>
+      </Name>
+		<Copy>Copy</Copy>
+      <GUID>23168F61-B105-D978-DB9A-9F8ED3C6E22D_DISABLED</GUID>
+      <Glyph>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\PXImc\Glyphs\PXImc_disabled.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\PXImc\Windows\PXImc Configuration.llb\Main Page.vi</Path>
+      </Item2Launch>
+      <RunTimeMenu>
+        <MenuItem>
+          <GUID>19bc53ea-1e5a-4660-998c-87022222f051</GUID>
+          <Type>Action</Type>
+          <Name>
+            <eng>Enable</eng>
+            <loc>Enable</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\PXImc\Windows\PXImc Configuration.llb\EnableDisable Main Page.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+        <MenuItem>
+          <GUID>18B2C676-AF17-2B7F-0962-D95D206E20FB</GUID>
+          <Type>Separator</Type>
+          <Name>
+            <eng>.</eng>
+            <loc>.</loc>
+          </Name>
+          <Item2Launch>
+            <Type>Absolute</Type>
+            <Path>.</Path>
+          </Item2Launch>
+        </MenuItem>
+        <MenuItem>
+          <GUID>df942635-d104-4795-8f03-e31ea656376a</GUID>
+          <Type>Action</Type>
+          <Name>
+				<eng>Import/Export Cfg</eng>
+				<loc>Import/Export Cfg</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\PXImc\Windows\PXImc Configuration.llb\CD Import Export.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+        <MenuItem>
+          <GUID>18B2C676-AF17-2B7F-0962-D95D206E20FB</GUID>
+          <Type>Separator</Type>
+          <Name>
+            <eng>.</eng>
+            <loc>.</loc>
+          </Name>
+          <Item2Launch>
+            <Type>Absolute</Type>
+            <Path>.</Path>
+          </Item2Launch>
+        </MenuItem>
+      </RunTimeMenu>
+      <ButtonList>
+			<Button>
+				<ID>PXImcCD_ImportExport</ID>
+				<Glyph>
+					<Type>To Common Doc Dir</Type>
+					<Path>Custom Devices\PXImc\Glyphs\ImportExport.png</Path>
+				</Glyph>
+				<Type>Notification</Type>
+				<ReferencedGUID>df942635-d104-4795-8f03-e31ea656376a</ReferencedGUID>
+				<ButtonText>
+					<eng>Import/Export Cfg</eng>
+					<loc>Import/Export Cfg</loc>
+				</ButtonText>
+				<Caption>
+					<eng>Import/Export Cfg</eng>
+					<loc>Import/Export Cfg</loc>
+				</Caption>
+					<TipStrip>
+					<eng>Import/Export Cfg</eng>
+					<loc>Import/Export Cfg</loc>
+				</TipStrip>
+				<Documentation>
+					<eng></eng>
+					<loc></loc>
+				</Documentation>
+			</Button>
+      </ButtonList>
+	  <ActionVIOnCompile>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\PXImc\Windows\PXImc Configuration.llb\ActionVIOnCompile.vi</Path>
+	  </ActionVIOnCompile>
     </Page>
 	<Page>
 		<Name>
-			<eng>Channel (delete protected)</eng>
-			<loc>Channel (delete protected)</loc>
+			<eng>IO Section</eng>
+			<loc>IO Section</loc>
 		</Name>
 		<DisallowRenaming>true</DisallowRenaming>
 		<DeleteProtection>true</DeleteProtection>
-		<GUID>C9C36D38-F811-822C-0C95-B5EFD5033E75</GUID>
+		<GUID>e5f11af8-7934-4c7e-9777-365ea8139455</GUID>
 		<Glyph>
 			<Type>To Application Data Dir</Type>
-			<Path>System Explorer\Glyphs\default fpga channel.png</Path>
+			<Path>System Explorer\Glyphs\default fpga category.png</Path>
 		</Glyph>
 		<Item2Launch>
-			<Type>Absolute</Type>
-			<Path>System UI VIs\Custom Device\Custom Device Channel.vi</Path>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\PXImc\Windows\PXImc Configuration.llb\CD Section.vi</Path>
 		</Item2Launch>
-		<RunTimeMenu />
+      <RunTimeMenu>
+        <MenuItem>
+          <GUID>3fb05800-9c8d-4da0-ae64-87c045b0a4e8</GUID>
+          <Type>Action</Type>
+          <Name>
+				<eng>Add Channel</eng>
+				<loc>Add Channel</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\PXImc\Windows\PXImc Configuration.llb\CD Add Channel.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+        <MenuItem>
+          <GUID>18B2C676-AF17-2B7F-0962-D95D206E20FB</GUID>
+          <Type>Separator</Type>
+          <Name>
+            <eng>.</eng>
+            <loc>.</loc>
+          </Name>
+          <Item2Launch>
+            <Type>Absolute</Type>
+            <Path>.</Path>
+          </Item2Launch>
+        </MenuItem>
+      </RunTimeMenu>
+      <ButtonList>
+			<Button>
+				<ID>PXImcCD_AddChannel</ID>
+				<Glyph>
+					<Type>To Application Data Dir</Type>
+					<Path>System Explorer\Glyphs\NI-XNET Add Signal.png</Path>
+				</Glyph>
+				<Type>Notification</Type>
+				<ReferencedGUID>3fb05800-9c8d-4da0-ae64-87c045b0a4e8</ReferencedGUID>
+				<ButtonText>
+					<eng>Add Channel</eng>
+					<loc>Add Channel</loc>
+				</ButtonText>
+				<Caption>
+					<eng>Add Channel</eng>
+					<loc>Add Channel</loc>
+				</Caption>
+					<TipStrip>
+						<eng>Add Channel</eng>
+						<loc>Add Channel</loc>
+					</TipStrip>
+				<Documentation>
+					<eng></eng>
+					<loc></loc>
+				</Documentation>
+			</Button>
+      </ButtonList>
 		<Help>
 			<Item2Launch>
 				<Type>To Base</Type>
@@ -84,7 +314,6 @@
 			<FileType>chm</FileType>
 		</Help>
 	</Page>
-	
 	<Page>
 		<Name>
 			<eng>Section (delete protected)</eng>
@@ -98,11 +327,86 @@
 			<Path>System Explorer\Glyphs\default fpga category.png</Path>
 		</Glyph>
 		<Item2Launch>
-			<Type>Absolute</Type>
-			<Path>System UI VIs\Custom Device\Custom Device Section.vi</Path>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\PXImc\Windows\PXImc Configuration.llb\CD Section.vi</Path>
 		</Item2Launch>
-		<RunTimeMenu>
-		</RunTimeMenu>
+		<Help>
+			<Item2Launch>
+				<Type>To Base</Type>
+				<Path>Veristand.chm\Custom_Devices_SE.html</Path>
+			</Item2Launch>
+			<FileType>chm</FileType>
+		</Help>
+	</Page>
+	<Page>
+		<Name>
+			<eng>Channel Tx</eng>
+			<loc>Channel Tx</loc>
+		</Name>
+		<DisallowRenaming>false</DisallowRenaming>
+		<DeleteProtection>false</DeleteProtection>
+		<ExcludeFromAlphabeticalOrder>true</ExcludeFromAlphabeticalOrder>
+		<GUID>18a218f3-fb5d-4796-9cc6-11db7d4ab857</GUID>
+		<Glyph>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\PXImc\Glyphs\ChnTx.png</Path>
+		</Glyph>
+		<Item2Launch>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\PXImc\Windows\PXImc Configuration.llb\Page Channel.vi</Path>
+		</Item2Launch>
+		<RunTimeMenu />
+		<Help>
+			<Item2Launch>
+				<Type>To Base</Type>
+				<Path>Veristand.chm\Custom_Devices_SE.html</Path>
+			</Item2Launch>
+			<FileType>chm</FileType>
+		</Help>
+	</Page>
+	<Page>
+		<Name>
+			<eng>Channel Rx</eng>
+			<loc>Channel Rx</loc>
+		</Name>
+		<DisallowRenaming>false</DisallowRenaming>
+		<DeleteProtection>false</DeleteProtection>
+		<ExcludeFromAlphabeticalOrder>true</ExcludeFromAlphabeticalOrder>
+		<GUID>59fdf36c-4a71-4c9d-8794-1bbee663643f</GUID>
+		<Glyph>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\PXImc\Glyphs\ChnRx.png</Path>
+		</Glyph>
+		<Item2Launch>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\PXImc\Windows\PXImc Configuration.llb\Page Channel.vi</Path>
+		</Item2Launch>
+		<RunTimeMenu />
+		<Help>
+			<Item2Launch>
+				<Type>To Base</Type>
+				<Path>Veristand.chm\Custom_Devices_SE.html</Path>
+			</Item2Launch>
+			<FileType>chm</FileType>
+		</Help>
+	</Page>
+	<Page>
+		<Name>
+			<eng>Channel (delete protected)</eng>
+			<loc>Channel (delete protected)</loc>
+		</Name>
+		<DisallowRenaming>true</DisallowRenaming>
+		<DeleteProtection>true</DeleteProtection>
+		<GUID>C9C36D38-F811-822C-0C95-B5EFD5033E75</GUID>
+		<Glyph>
+			<Type>To Application Data Dir</Type>
+			<Path>System Explorer\Glyphs\default fpga channel.png</Path>
+		</Glyph>
+		<Item2Launch>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\PXImc\Windows\PXImc Configuration.llb\Page Channel.vi</Path>
+		</Item2Launch>
+		<RunTimeMenu />
 		<Help>
 			<Item2Launch>
 				<Type>To Base</Type>
